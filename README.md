@@ -1,29 +1,27 @@
-# Classificação de Imagens no CIFAR-10 com PyTorch
+# Image Classification on CIFAR-10 with PyTorch
 
-Este projeto implementa um pipeline completo de **treinamento e avaliação de modelos de Deep Learning** (ResNet-18 e VGG-19) para classificação de imagens no dataset **CIFAR-10**.  
-O código foi desenvolvido em **Google Colab** com a biblioteca **PyTorch**.
-
----
-
-## 📂 Estrutura do Projeto
-
-- **Pré-processamento & Transformações**
-  - Aumento de dados (flip horizontal, jitter de cor, rotação aleatória).
-  - Normalização com estatísticas do ImageNet.
-  - Conjunto de treino, validação e teste devidamente separados.
-
-- **Modelos Implementados**
-  - `ResNet18` com pesos do ImageNet.
-  - `VGG19` adaptado para CIFAR-10.
-
-- **Treinamento**
-  - Otimizador: **Adam**
-  - Agendador de taxa de aprendizado: **CosineAnnealingLR**
-  - Critério: **CrossEntropyLoss**
-  - Estratégias: **early stopping** e **grad clipping**.
-
-- **Avaliação**
-  - Métricas: Acurácia, Balanced Accuracy, Precisão, Recall, F1-score.
-  - Visualizações: Curvas de loss/accuracy, predições de amostra e matriz de confusão.
+This project implements a complete **Deep Learning training and evaluation pipeline** (ResNet-18 and VGG-19) for image classification on the **CIFAR-10** dataset.  
+The code was developed in **Google Colab** using the **PyTorch** library.
 
 ---
+
+## 📂 Project Structure
+
+- **Preprocessing & Transformations**
+  - Data augmentation (horizontal flip, color jitter, random rotation).
+  - Normalization using ImageNet statistics.
+  - Properly split training, validation, and test sets.
+
+- **Implemented Models**
+  - `ResNet18` with pretrained ImageNet weights.
+  - `VGG19` adapted for CIFAR-10.
+
+- **Training**
+  - Optimizer: **Adam**
+  - Learning rate scheduler: **CosineAnnealingLR**
+  - Loss function: **CrossEntropyLoss**
+  - Strategies: **early stopping** and **gradient clipping**.
+
+- **Evaluation**
+  - Metrics: Accuracy, Balanced Accuracy, Precision, Recall, F1-score.
+  - Visualizations: Loss/accuracy curves, sample predictions, and confusion matrix.
